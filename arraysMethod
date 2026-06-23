@@ -20,3 +20,10 @@ console.log(dict1.map(dict => dict.name))
 const taxes = arr1.map(price => price * 1.1).filter(num => num > 100)
 console.log(taxes)
 
+
+const arr2 = [10, 20, 30]
+console.log(arr2.reduce((acc, current) => acc + current, 0))
+
+
+console.log(arr2.reduce((acc, current) => acc * current, 1))
+
