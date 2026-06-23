@@ -37,3 +37,26 @@ console.log(arr2.sort((a, b) => a - b))
 const deleteNum = (arr2.splice(1, 2))
 console.log(arr2)
 
+//32
+const flipflap = [1, 2, [3, 4]]
+console.log(flipflap.flat())
+
+//36
+const arr3 = arr2.filter(num => num % 2 === 0).map(num => num * 2).filter(num => num % 2 === 0)
+const totalarr2 = arr3.reduce((acc, cur) => acc + cur, 0)
+console.log(arr3, totalarr2)
+
+//38
+
+const dict3 = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }]
+console.log(dict3.reduce((acc, item) => {
+    const key = item.type
+
+    if (!acc[key]) {
+        acc[key] = [];
+    }
+    acc[key].push(item);
+
+    return acc;
+}, {}))
+
