@@ -1,0 +1,13 @@
+const arr1 = [1, 2, 3, 4, 5]
+const arrDouble = arr1.map(arr => arr * 2)
+console.log(arrDouble)
+
+const HL = ["hello", "world", "hi", "hello", "cat", "javascript"]
+console.log(HL.map(word => word.toUpperCase()))
+
+const newPrice = arr1.map(price => price * 1.17)
+console.log(newPrice)
+
+console.log(arr1.filter(num => num % 2 === 0))
+
+console.log(HL.filter(word => word.length > 3))
