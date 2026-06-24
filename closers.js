@@ -79,10 +79,14 @@ const gen = createIdGenerator = () => {
 
 const createBankAccount = initialBalance => {
     let balance = initialBalance
-    const deposit = amount => balance + amount
+    const deposit = amount => {
+        balance = balance + amount
+        return balance
+    }
     const withdraw = amount => {
         if (amount > balance) return "you poor"
-        return balance - amount
+        balance = balance - amount
+        return balance
     }
     const getBalance = () => balance
 
