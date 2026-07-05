@@ -3,6 +3,9 @@ import { carDone,carWaiting,carsInRace,nextCar, data, findNAmeByCarID} from "./u
 
 
 const main = async () => {
+    await catchData()
+
+
     console.log("Pit Stop Queue - Race Team Management System  ")
     console.log("Race engineer: Let's check the current queue status on the pit wall.\n")
     console.log(" Loading queue data... \n ")
